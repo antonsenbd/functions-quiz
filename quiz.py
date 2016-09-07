@@ -10,6 +10,14 @@ print has_teen(12, 13, 20) #True
 print has_teen(10, 20, 29) #False
 
 # TODO - write not_string
+def not_string(s):
+	if s.startswith ("Good"):
+		return "Not Good"
+	if s.startswith ("Not Good"):
+		return "Not Good Not"
+
+print not_string("Good") #Not Good
+print not_string("Not Good") #Not Good Not
 
 # TODO - write icy_hot
 

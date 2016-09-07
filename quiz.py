@@ -47,5 +47,15 @@ print closer_to(10, 5, 5) #0
 
 
 # TODO - write two_as_one
+def two_as_one(a, b, c):
+	if (a + b) == c or (a + c) == b or (b + c) == a:
+		return True
+	else:
+		return False
+
+print two_as_one(2, 3, 5)  #True
+print two_as_one(10, 4, 6) #True
+print two_as_one(7, 10, 3) #True
+print two_as_one(2, 92, 4) #False
 
 # TODO - write pig_latinify

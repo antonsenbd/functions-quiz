@@ -59,3 +59,24 @@ print two_as_one(7, 10, 3) #True
 print two_as_one(2, 92, 4) #False
 
 # TODO - write pig_latinify
+def pig_latinify(s):
+	if s == "bitch":
+		return "b*tch"
+	if s.startswith ("a") or s.startswith ("e") or s.startswith("i") or s.startswith("o") or s.startswith("u"):
+		return s + "way"
+	if s.startswith ("b"):
+		return s + "bay"
+	if s == "fuck":
+		return "f*ck"
+	if s == "shit":
+		return "sh*t"
+	if s == "motherfucker":
+		return "m*th*rf*ck*r"
+	
+
+	
+
+print pig_latinify("apple") #appleway
+print pig_latinify("back")  #backbay
+print pig_latinify("fuck")  #f*ck
+print pig_latinify("bitch") #b*tch

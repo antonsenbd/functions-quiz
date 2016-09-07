@@ -20,6 +20,17 @@ print not_string("Good") #Not Good
 print not_string("Not Good") #Not Good Not
 
 # TODO - write icy_hot
+def icy_hot(a, b):
+	if a < 0 and b > 0:
+		return True
+	if a > 0 and b < 0:
+		return True
+	else:
+		return False
+
+print icy_hot(-1, 101) #True
+print icy_hot(101, -1) #True
+print icy_hot(50, 60)  #False
 
 # TODO - write closer_to
 

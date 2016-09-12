@@ -11,10 +11,10 @@ print has_teen(10, 20, 29) #False
 
 # TODO - write not_string
 def not_string(s):
-	if s.startswith ("Good"):
-		return "Not Good"
-	if s.startswith ("Not Good"):
-		return "Not Good Not"
+	if s.startswith ("not"):
+		return s + "not"
+	else :
+		return "not" + s
 
 print not_string("Good") #Not Good
 print not_string("Not Good") #Not Good Not
@@ -34,11 +34,11 @@ print icy_hot(50, 60)  #False
 
 # TODO - write closer_to
 def closer_to(a, b, c):
-	if (a - b) < (a - c):
+	if abs(a - b) < abs(a - c):
 		return b
-	if (a - b) > (a - c):
+	if abs(a - b) > abs(a - c):
 		return c
-	if (a - b) == (a - c):
+	if abs(a - b) == abs(a - c):
 		return 0
 
 print closer_to(10, 9, 8) #9
